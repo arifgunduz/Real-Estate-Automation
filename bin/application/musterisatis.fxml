@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="655.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.musterisatisController">
+   <children>
+      <ImageView fitHeight="813.0" fitWidth="1254.0" layoutX="-23.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Evaldıktan.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="12.0" layoutY="23.0" style="-fx-background-color: #000000;" text="Müşteriye verilecek ev bilgileri" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="62.0" text="Kaydedilecek Ev Numarası">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="117.0" text="Adres">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="769.0" layoutY="62.0" text="Ev Oda Sayısı">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="63.0" text="Toplam Ev Alanı">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="945.0" layoutY="63.0" text="Ev tercihi">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="62.0" text="Ev Türü">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_musevno" layoutX="10.0" layoutY="89.0" prefHeight="26.0" prefWidth="198.0" />
+      <TextField fx:id="txt_musevalan" layoutX="432.0" layoutY="91.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="txt_musoda" layoutX="761.0" layoutY="89.0" prefHeight="26.0" prefWidth="163.0" />
+      <TextArea fx:id="txt_musadres" layoutX="15.0" layoutY="143.0" prefHeight="70.0" prefWidth="198.0" />
+      <Label layoutX="14.0" layoutY="230.0" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #000000;" text="Müşteri Bilgileri" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_sattc" layoutX="22.0" layoutY="304.0" prefHeight="30.0" prefWidth="151.0" />
+      <TextField fx:id="txt_satad" layoutX="210.0" layoutY="304.0" prefHeight="26.0" prefWidth="146.0" />
+      <TextField fx:id="txt_satsoyad" layoutX="364.0" layoutY="303.0" prefHeight="26.0" prefWidth="179.0" />
+      <TextField fx:id="txt_sattel" layoutX="571.0" layoutY="301.0" prefHeight="26.0" prefWidth="151.0" />
+      <TextField fx:id="txt_satmail" layoutX="780.0" layoutY="303.0" prefHeight="26.0" prefWidth="210.0" />
+      <Label layoutX="15.0" layoutY="276.0" text="TC Kimlik No :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="277.0" prefHeight="26.0" prefWidth="34.0" text="Ad :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="276.0" text="Soyad :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="571.0" layoutY="276.0" text="Telefon Numarası :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="780.0" layoutY="265.0" text="Mail Adresi :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1003.0" layoutY="223.0" text="Adres">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_satadres" layoutX="1009.0" layoutY="245.0" prefHeight="83.0" prefWidth="210.0" />
+      <Button fx:id="btn_bilgilerikaydet" layoutX="313.0" layoutY="609.0" mnemonicParsing="false" onAction="#click_btn_bilgilerikaydet" prefHeight="30.0" prefWidth="266.0" text="Bilgileri Kaydet">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_musanasayfa" layoutX="20.0" layoutY="609.0" mnemonicParsing="false" onAction="#click_btn_musanasayfa" prefHeight="56.0" prefWidth="266.0" text="Anasayfa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="combo_satismus" layoutX="231.0" layoutY="89.0" prefHeight="26.0" prefWidth="163.0" />
+      <Label layoutX="665.0" layoutY="63.0" text="Fiyat">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_musfiyat" layoutX="647.0" layoutY="89.0" prefHeight="26.0" prefWidth="90.0" />
+      <ComboBox fx:id="combo_musevTercihi" layoutX="935.0" layoutY="89.0" prefHeight="26.0" prefWidth="145.0" />
+      <Button fx:id="btn_mustemizle" layoutX="647.0" layoutY="607.0" mnemonicParsing="false" onAction="#click_btn_mustemizle" prefHeight="39.0" prefWidth="179.0" text="Temizle">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblsorgu" layoutX="17.0" layoutY="345.0" onMouseClicked="#tblsorgu_click2" prefHeight="258.0" prefWidth="985.0">
+        <columns>
+          <TableColumn fx:id="Emlakno" prefWidth="60.0" text="Emlak No" />
+          <TableColumn fx:id="Evturu" prefWidth="67.20001220703125" text="Ev Türü" />
+            <TableColumn fx:id="Il" prefWidth="55.20001220703125" text="İL" />
+            <TableColumn fx:id="Ilce" prefWidth="50.4000244140625" text="İLÇE" />
+            <TableColumn fx:id="Adres" prefWidth="157.5999755859375" text="Semt" />
+            <TableColumn fx:id="Odasayisi" prefWidth="62.4000244140625" text="Oda Sayısı" />
+            <TableColumn fx:id="Toplamevalan" prefWidth="74.4000244140625" text="Top. Ev Alan" />
+            <TableColumn fx:id="Yapimtarihi" prefWidth="75.99993896484375" text="Yapim Tarihi" />
+            <TableColumn fx:id="KatNo" prefWidth="75.0" text="Kat No" />
+            <TableColumn fx:id="EvYasi" prefWidth="75.0" text="Ev Yaşı" />
+            <TableColumn fx:id="EvDurum" prefWidth="75.0" text="Ev Durum" />
+            <TableColumn fx:id="EvTercihi" prefWidth="75.0" text="Ev Tercihi" />
+            <TableColumn fx:id="Fiyat" prefWidth="75.0" text="Fiyat" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_kontrolet" layoutX="854.0" layoutY="607.0" mnemonicParsing="false" onAction="#click_btn_kontrolet" prefHeight="56.0" prefWidth="198.0" text="Kontrol Et">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

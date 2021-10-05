@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.satilanevlerController">
+   <children>
+      <ImageView fitHeight="810.0" fitWidth="1303.0" layoutX="-46.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/emlakkk.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="27.0" text="Satılan ve Kiralana evler listesi" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="88.0" text="Ev türü :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdt_sat1" layoutX="165.0" layoutY="80.0" mnemonicParsing="false" selected="true" text="Satılık Ev" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="toogglegroup2" />
+         </toggleGroup>
+         
+      </RadioButton>
+      <RadioButton fx:id="rdt_kira2" layoutX="166.0" layoutY="127.0" mnemonicParsing="false" selected="true" text="Kiralık Ev" textFill="WHITE" toggleGroup="$toogglegroup2">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </RadioButton>
+      <TableView fx:id="tblsatilantab" layoutX="12.0" layoutY="240.0" onSort="#click_btn_satilantab" prefHeight="254.0" prefWidth="1211.0">
+        <columns>
+          <TableColumn fx:id="KayitEv" prefWidth="69.5999755859375" text="Kayıt Ev No" />
+          <TableColumn fx:id="KayitEvturu" prefWidth="52.800025939941406" text="Ev Türü" />
+            <TableColumn fx:id="KayitEvtoplamalan" prefWidth="91.20004272460938" text="Toplam Ev alan" />
+            <TableColumn fx:id="KayitEvodasayisi" minWidth="0.0" prefWidth="68.80006408691406" text="Ev Oda Say" />
+            <TableColumn fx:id="KayitEvdurum" minWidth="0.0" prefWidth="67.199951171875" text="Ev Durumu" />
+            <TableColumn fx:id="KayitEvadres" minWidth="0.0" prefWidth="128.00006103515625" text="Adres" />
+            <TableColumn fx:id="KayitTc" prefWidth="95.99990844726562" text="TC no" />
+            <TableColumn fx:id="KayitAd" prefWidth="72.0" text="Ad" />
+            <TableColumn fx:id="KayitSoyad" prefWidth="86.39996337890625" text="Soyad" />
+            <TableColumn fx:id="KayitTel" prefWidth="92.0" text="Telefon" />
+            <TableColumn fx:id="KayitMail" prefWidth="145.60003662109375" text="Mail" />
+            <TableColumn fx:id="KayitAdres" prefWidth="166.39990234375" text="Adres" />
+            <TableColumn fx:id="KayitFiyat" prefWidth="67.2000732421875" text="Fiyat" />
+        </columns>
+      </TableView>
+      <Label layoutX="532.0" layoutY="201.0" text="Bilgilendirme" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_satkirsorgu" layoutX="51.0" layoutY="172.0" mnemonicParsing="false" onAction="#click_btn_satkirsorgu" prefHeight="46.0" prefWidth="326.0" text="Sorgula">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_listanasayfa" layoutX="92.0" layoutY="554.0" mnemonicParsing="false" onAction="#click_btn_listanasayfa" prefHeight="111.0" prefWidth="202.0" text="Anasayfa">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_listcikis" layoutX="655.0" layoutY="554.0" mnemonicParsing="false" onAction="#click_btn_listcikis" prefHeight="111.0" prefWidth="202.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="345.0" layoutY="501.0" text="Silmek İStediğiniz Ev No Giriniz" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_satilanDeger" layoutX="376.0" layoutY="527.0" prefHeight="26.0" prefWidth="189.0" promptText="Kayıt Ev No" />
+      <Button fx:id="btn_satilanSil" layoutX="376.0" layoutY="562.0" mnemonicParsing="false" onAction="#click_btn_satilanSil" prefHeight="102.0" prefWidth="190.0" text="SİL">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

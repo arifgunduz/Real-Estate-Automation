@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.anamenuController">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="948.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/anamenu.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_evekle" layoutX="474.0" layoutY="24.0" mnemonicParsing="false" onAction="#action_btn_evekle" prefHeight="100.0" prefWidth="382.0" text="Ev Ekleme">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_evsor" layoutX="473.0" layoutY="145.0" mnemonicParsing="false" onAction="#action_btn_evsor" prefHeight="100.0" prefWidth="382.0" text="Ev Sorgulama/Listeleme">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_cikis" layoutX="526.0" layoutY="416.0" mnemonicParsing="false" onAction="#action_btn_cikis" prefHeight="100.0" prefWidth="278.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_evsat" layoutX="474.0" layoutY="270.0" mnemonicParsing="false" onAction="#action_btn_evsat" prefHeight="100.0" prefWidth="381.0" text="Satılan veya Kiralanan Evler">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="51.0" layoutY="63.0" text="UĞUR EMLAK">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

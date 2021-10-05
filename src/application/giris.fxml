@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.girisController">
+   <children>
+      <ImageView fitHeight="599.0" fitWidth="902.0" layoutX="-27.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/girisev.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="296.0" layoutY="14.0" text="UĞUR EMLAK" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="113.0" text="Kullanıcı adı :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="155.0" text="Şifre :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kuladi" layoutX="201.0" layoutY="117.0" promptText="kullanıcı adı" />
+      <Button fx:id="btn_girisyap" layoutX="201.0" layoutY="217.0" mnemonicParsing="false" onAction="#click_btn_girisyap" prefHeight="66.0" prefWidth="149.0" text="Giriş yap">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_sonuc" layoutX="121.0" layoutY="492.0" text="..." />
+      <PasswordField fx:id="sifre" layoutX="201.0" layoutY="159.0" promptText="sifre" />
+   </children>
+</AnchorPane>
